@@ -1,0 +1,66 @@
+<header class="logol"><img src="assets/welcome/logol.svg" alt="" /></header>
+<div class="imgdiv">
+  <div class="smallcircle">
+    <img src="assets/welcome/smallcircle.svg" class="chota" alt="" />
+  </div>
+  <div class="logodiv">
+    <div class="welcome">Welcome back!</div>
+    <p class="loginacc">Login to your account.</p>
+    <p class="loginwith">Login With</p>
+    <div class="radiodiv">
+      <div class="with">
+        <input class="radio" type="radio" />
+        <p>Email</p>
+      </div>
+      <div class="with">
+        <input class="radio" type="radio" />
+        <p>Mobile Number</p>
+      </div>
+    </div>
+    <form [formGroup]="form">
+      <p class="loginwith">Email</p>
+      <input
+        class="field | form-control"
+        formControlName="email"
+        placeholder="Enter your email"
+        type="text"
+      />
+      <label class="text-danger" *ngIf="getError(form.get('email'))">
+        {{ getError(form.get("email")) }}
+      </label>
+    </form>
+
+    <p class="loginwith">Password</p>
+    <input class="field" type="password" />
+    <div class="yaad">
+      <div class="remember">
+        <p><input class="check" type="checkbox" />Remember me</p>
+      </div>
+      <p routerLink="xyz" class="forgot">Forgot passwork?</p>
+    </div>
+    <div>
+      <button class="unibtn">Login</button>
+    </div>
+    <div class="dont">
+      <p>
+        Don't have any account?<span class="forgot" routerLink="/signup"
+          >Sign up</span
+        >
+      </p>
+    </div>
+  </div>
+  <div class="bigcircle">
+    <img src="assets/welcome/bigCircle.svg" alt="" />
+  </div>
+</div>
+<footer class="footer">
+  <div class="rights">All Rights Reserved Copyright©2023 Planet Re-Bag</div>
+  <div class="contact">
+    Contact Us
+    <a href="#"><img src="assets/welcome/whatsapp.svg" alt="" /></a>
+    <a href="#"><img src="assets/welcome/insta.svg" alt="" /></a>
+    <a href="#"><img src="assets/welcome/at.svg" alt="" /></a>
+  </div>
+</footer>
+
+<router-outlet></router-outlet>

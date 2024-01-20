@@ -1,0 +1,137 @@
+<header class="logol"><img src="assets/welcome/logol.svg" alt="" /></header>
+<div class="imgdiv">
+  <div class="smallcircle">
+    <img src="assets/welcome/smallcircle.svg" class="chota" alt="" />
+  </div>
+  <div class="logodiv">
+    <div class="welcome">Welcome back!</div>
+    <p class="loginacc">Create your new account as a.</p>
+    <p class="loginwith">Sign up with</p>
+
+    <!-- HTML file -->
+    <!-- <div class="radiodiv">
+      <div class="with">
+        <input
+          class="radio"
+          type="radio"
+          (ngModel)="(selectedRadioValue)"
+          value="email"
+        />
+        <p>Email</p>
+      </div>
+      <div class="with">
+        <input
+          class="radio"
+          #check
+          (click)="getInfo(check.value)"
+          type="radio"
+          value="number"
+        />
+        <p>Mobile Number</p>
+      </div>
+    </div>
+
+    <p class="loginwith">Full Name</p>
+    <input class="field" type="text" placeholder="Enter your full name" />
+
+    <div *ngIf="display && selectedRadioValue === 'number'">
+      <p class="loginwith">Number</p>
+      <input class="field" type="text" placeholder="Enter Mobile number" />
+    </div>
+
+    <form [formGroup]="form" *ngIf="email && selectedRadioValue === 'email'">
+      <p class="loginwith">Email</p>
+      <input
+        class="field | form-control"
+        formControlName="email"
+        placeholder="Enter your email"
+        type="text"
+      />
+      <label class="text-danger" *ngIf="getError(form.get('email'))">
+        {{ getError(form.get("email")) }}
+      </label>
+    </form> -->
+
+    <div class="radiodiv">
+      <div class="with">
+        <input
+          class="radio"
+          #check
+          (click)="getInfo(check.value)"
+          value="email"
+          type="checkbox"
+        />
+        <p>Email</p>
+      </div>
+      <div class="with">
+        <input
+          class="radio"
+          #check
+          (click)="getInfo(check.value)"
+          type="checkbox"
+        />
+        <p>Mobile Number</p>
+      </div>
+    </div>
+    <div class="full-name">
+      <p class="loginwith">Full Name</p>
+      <input
+        class="field"
+        type="text"
+        placeholder="Full name greater than three words"
+      />
+    </div>
+    <div *ngIf="display" class="number">
+      <p class="loginwith">Number</p>
+      <input class="field" type="text" placeholder="Enter Mobile number" />
+    </div>
+    <div class="email" *ngIf="show">
+      <form [formGroup]="form">
+        <p class="loginwith">Email</p>
+        <input
+          class="field | form-control"
+          formControlName="email"
+          placeholder="Enter your email"
+          type="text"
+        />
+        <label class="text-danger" *ngIf="getError(form.get('email'))">
+          {{ getError(form.get("email")) }}
+        </label>
+      </form>
+    </div>
+    <div class="password">
+      <p class="loginwith">Password</p>
+      <input class="field" type="password" placeholder="*********" />
+    </div>
+    <div class="yaad">
+      <div class="remember">
+        <p><input class="check" type="checkbox" />Remember me</p>
+      </div>
+      <p routerLink="xyz" class="forgot">Forgot passwork?</p>
+    </div>
+    <div>
+      <button class="unibtn">Submit</button>
+    </div>
+    <div class="dont">
+      <p>
+        Already have account?<span class="forgot" routerLink="/login"
+          >Login</span
+        >
+      </p>
+    </div>
+  </div>
+  <div class="bigcircle">
+    <img src="assets/welcome/bigCircle.svg" alt="" />
+  </div>
+</div>
+<footer class="footer">
+  <div class="rights">All Rights Reserved Copyright©2023 Planet Re-Bag</div>
+  <div class="contact">
+    Contact Us
+    <a href="#"><img src="assets/welcome/whatsapp.svg" alt="" /></a>
+    <a href="#"><img src="assets/welcome/insta.svg" alt="" /></a>
+    <a href="#"><img src="assets/welcome/at.svg" alt="" /></a>
+  </div>
+</footer>
+
+<router-outlet></router-outlet>

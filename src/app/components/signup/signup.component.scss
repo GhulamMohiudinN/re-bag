@@ -1,0 +1,252 @@
+.logol {
+    padding-left: 100px;
+    padding-top: 22px;
+    height: 100px;
+}
+.imgdiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.smallcircle {
+    margin-top: 170px;
+}
+.bigcircle {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    height: 300px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 60px;
+}
+.rights {
+    padding-left: 60px;
+}
+.unibtn {
+    font-weight: 700;
+    background-color: #79AA00;
+    border: 1px solid #79AA00;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 12px;
+            &:hover {
+            background-color: white;
+            color: black;
+            transition: 0.2s;
+        }
+}
+
+.logodiv {
+    height: 450px;
+    width: 100%;
+    max-width: 85%;
+    margin-top: -35px;
+}
+.welcome {
+    font-weight: 600;
+    color: #526D00;
+    font-size: 34px;
+    text-align: center;
+}
+.loginacc {
+    text-align: center;
+    font-size: 14px;
+    margin-top: -10px;
+}
+.loginwith {
+    font-weight: 700;
+}
+.radiodiv {
+    display: flex;
+    gap: 70px;
+    margin-top: -16px;
+}
+.full-name {
+    margin-top: -7px;
+}
+.email {
+    margin-top: 7px;
+}
+.number {
+    margin-top: 7px;
+}
+.password {
+    margin-top: 7px;
+}
+.with {
+    display: flex;
+    gap: 5px;
+}
+.radio {
+    margin-top: -15px;
+}
+.field {
+    width: 100%;
+    border-radius: 9px;
+    height: 50px;
+    margin-top: -15px;
+    outline: none;
+    border: 1px solid #79AA00;
+    padding-left: 20px;
+}
+.yaad {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.remember {
+    display: flex;
+}
+.check {
+    margin-right: 15px;
+}
+.forgot {
+    color: #79AA00;
+    font-weight: 700;
+    cursor: pointer;
+}
+.dont {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.logo {
+    margin: auto;
+    width:50%;
+    img {
+        width: 100%;
+    }
+}
+.scan {
+    text-align: center;
+    font-size: 16px;
+}
+@media only screen and (max-width:1117px) {
+    .smallcircle {
+        // margin-top: 450px;
+        width: fit-content;
+    }
+    .bigcircle {
+        height: 300px;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+    }
+    .logodiv {
+        width: 500px;
+        img {
+            width: 100%;
+        }
+    }
+    .contact {
+        padding-right: 30px;
+    }
+    .rights {
+        padding-left: 30px;
+    }
+}
+@media only screen and (max-width:800px) {
+    .smallcircle {
+        margin-top: 200px;
+        width: fit-content;
+    }
+    .bigcircle {
+        height: 300px;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+    }
+    .logodiv {
+        width: 500px;
+        img {
+            width: 100%;
+        }
+    }
+    .contact {
+        padding-right: 30px;
+    }
+    .rights {
+        padding-left: 30px;
+    }
+}
+@media only screen and (max-width:793px) {
+    .footer {
+        display: flex;
+    }  
+    .chota {
+        height: 70px;
+    }
+    .bigcircle {
+        height: 100px;
+    }
+    .contact {
+        margin:0px auto;
+    }     
+    .rights {
+        display:none;
+    }
+}
+@media only screen and (max-width:692px) {
+    .chota {
+        height: 70px;
+    }
+    .bigcircle {
+        height: 100px;
+    }
+    .logodiv {
+        width: 500px;
+        img {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width:587px) {
+    .logodiv {
+        width: 400px;
+    }
+    .logol {
+        padding-left: 50px;
+        padding-top: 22px;
+        height: 100px;
+    }
+}
+@media only screen and (max-width:451px) {
+    .logodiv {
+        width: 350px;
+        margin: -40 auto 0 auto;
+    }
+    .radiodiv {
+        gap: 30px;
+    }
+    .yaad {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width:402px) {
+    .logodiv {
+        width: 300px;
+        
+    }
+    .scan {
+        font-size: 14px;
+    }
+}
