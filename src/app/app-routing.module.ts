@@ -8,6 +8,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'signup', component:SignupComponent},
+  {path:'admin', loadChildren: ()=> import('./modules/admin/admin.module'). then ((m) =>m.AdminModule)},
   {path:'', component:WelcomeComponent},
   {path:'**', component:NotFoundComponent}
 ];
