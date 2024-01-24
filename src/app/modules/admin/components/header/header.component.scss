@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 12vh;
+    .logo {
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    .profile {
+        padding-right: 30px;
+        margin-top: 10px;
+        display: flex;
+        gap: 20px;
+        p{
+            font-size: 12px;
+        }
+        strong {
+            font-size: 18px;
+        }
+        img {
+            width: fit-content;
+            border: 1px solid #79AA00;
+            margin-top: 5px;
+            border-radius: 50%;
+            height: 45px;
+            padding: 10px;
+        }
+    }
+}
