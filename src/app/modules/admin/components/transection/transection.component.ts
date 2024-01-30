@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./transection.component.scss']
 })
 export class TransectionComponent {
-
 }

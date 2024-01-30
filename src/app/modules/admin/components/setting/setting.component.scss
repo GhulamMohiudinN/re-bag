@@ -1,0 +1,126 @@
+.main {
+    display: flex;
+    background-color: #F8F8F8;
+}
+.ulcontainer {
+    background-color: #fff;
+    width: 21%;
+    height: 88vh;
+    padding-top: 25px;
+    ul {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        list-style: none;
+        display: flex;
+        font-size: 16px;
+        font-style: normal;
+        padding: 10px 20px 10px 20px;
+        font-weight: 400;
+        max-width: 90%;
+        gap: 10px;
+        &:hover {
+            background: rgba(121, 170, 0, 0.10);
+        }
+        a {
+            list-style: none;
+            text-decoration: none;
+            color: #777;
+        }
+    }
+}
+.contentDiv {
+    margin-top: 35px;
+    width: 79%;
+    display: flex;
+    gap: 20px;
+    div {
+        background-color: #fff;
+    }
+}
+.card1 {
+    margin-left: 40px;
+    width: 25%;
+    height: fit-content;
+    div {
+        div {
+            display: flex;
+            padding-left: 15px;
+            gap: 10px;
+            margin-top: 13px;
+            strong {
+                color: #79AA00;                
+            }
+            &:hover {
+                background: rgba(121, 170, 0, 0.10);
+            }
+            img {
+                margin-top: -10px;
+            }
+        }
+    }
+}
+.card2 {
+    width: 66%;
+    height: fit-content;
+    .div1 {
+        padding-left: 3%;
+        padding-top: 1%;
+        input {
+            width: 45%;
+            border: none;
+            border-radius: 8px;
+            height: 40px;
+            background: #F8F8F8;
+            padding-left: 30px;
+        }
+        span {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+    button {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 193px;
+        height: 56px;
+        margin-left: 500px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        border: 1px solid #79AA00;
+        background: #79AA00;
+        p {
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            margin: auto;
+            font-weight: 700;
+        }
+        
+    }
+}
+.div2 {
+    padding-left: 3%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    input {
+        width: 90%;
+        border: none;
+        border-radius: 8px;
+        height: 40px;
+        background: #F8F8F8;
+        padding-left: 30px;
+        &:active {
+            border: 1px solid black;
+        }
+    }
+    span {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+    }
+}

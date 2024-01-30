@@ -2,7 +2,7 @@
     display: flex;
 }
 .ulcontainer {
-    width: 250px;
+    width: 19%;
     height: 88vh;
     padding-top: 25px;
     ul {
@@ -15,8 +15,13 @@
         display: flex;
         font-size: 16px;
         font-style: normal;
+        padding: 10px 20px 10px 20px;
         font-weight: 400;
+        max-width: 90%;
         gap: 10px;
+        &:hover {
+            background: rgba(121, 170, 0, 0.10);
+        }
         a {
             list-style: none;
             text-decoration: none;
@@ -44,6 +49,7 @@
     background-color: rgba(159, 193, 52, 0.10);
     gap: 20px;
     border-radius: 10px;
+    padding: 0 10px 0 10px;
     strong {
         color: #79AA00;
         font-size: 24px;
@@ -74,6 +80,7 @@
     background-color: rgba(52, 134, 193, 0.10);
     gap: 20px;
     border-radius: 10px;
+    padding: 0 10px 0 10px;
     strong {
         color: #3486C1;
         font-size: 24px;
@@ -105,6 +112,7 @@
     gap: 20px;
     border-radius: 10px;
     width: 300px;
+    padding: 0 10px 0 10px;
     strong {
         color: #81CFB0;
         font-size: 24px;
